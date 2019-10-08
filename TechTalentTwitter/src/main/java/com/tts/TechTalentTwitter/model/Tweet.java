@@ -42,4 +42,7 @@ public class Tweet {
 	    List<Tweet> findAllByUserOrderByCreatedAtDesc(User user);
 	    List<Tweet> findAllByUserInOrderByCreatedAtDesc(List<User> users);
 	}
+	@NotEmpty(message = "Tweet cannot be empty")
+	@Length(max = 280, message = "Tweet cannot have more than 280 characters")
+	
 }
