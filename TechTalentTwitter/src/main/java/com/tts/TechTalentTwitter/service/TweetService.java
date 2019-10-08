@@ -4,6 +4,9 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import com.tts.TechTalentTwitter.repository.TweetRepository;
+import com.tts.TechTalentTwitter.model.Tweet;
+import com.tts.TechTalentTwitter.model.User;
 
 @Service
 public class TweetService {
